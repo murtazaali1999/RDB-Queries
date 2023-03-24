@@ -1,7 +1,3 @@
-#RDB-SETUP
-
-##Employees Table Setup
-
 create table Employees (
 	id INT,
 	first_name VARCHAR(50),
@@ -33,14 +29,3 @@ insert into Employees (id, first_name, last_name, email, gender, ip_address, age
 insert into Employees (id, first_name, last_name, email, gender, ip_address, age, credit_card) values (18, 'Dannel', 'Paulino', 'dpaulinoh@cnet.com', 'Male', '24.123.240.146', 74, 'jcb');
 insert into Employees (id, first_name, last_name, email, gender, ip_address, age, credit_card) values (19, 'Laird', 'Fleetwood', 'lfleetwoodi@macromedia.com', 'Male', '145.10.204.117', 37, 'bankcard');
 insert into Employees (id, first_name, last_name, email, gender, ip_address, age, credit_card) values (20, 'Koren', 'Machans', 'kmachansj@illinois.edu', 'Female', '176.115.0.23', 65, 'maestro');
-
-#Queries
-
-SELECT * FROM EMPLOYEES
-SELECT * FROM EMPLOYEES WHERE gender = "Male"
-SELECT * FROM EMPLOYEES WHERE age BETWEEN 33 AND 44
-SELECT * FROM Employees WHERE ip_address LIKE "32.%"  
-SELECT * FROM Employees WHERE gender In ("Male","Female")
-
-
-
